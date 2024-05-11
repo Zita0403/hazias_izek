@@ -52,7 +52,7 @@ h1 {
     width: 300px;
     height: 400px;
     margin-top: 650px;
-    border-radius: 8px 0px 0px 0px;
+    border-radius: 8px;
     background-color: #F9F2ED;
     box-shadow: 10px 10px 20px 0px #0000001A;
     position: absolute;
