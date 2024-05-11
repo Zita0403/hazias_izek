@@ -1,0 +1,174 @@
+html {
+    box-sizing: border-box;
+    display: block;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 1440px;
+    height: 2831px;
+    background-color: #E4D7CC;
+}
+
+/*Header*/
+.site_header {
+    /*box-sizing: inherit;*/
+    width: 1440px;
+    height: 430px;
+    background-color: #A0774D;
+    position: absolute;
+}
+h1 {
+    /*box-sizing: inherit;*/
+    width: 921px;
+    height: 150px;
+    top: 140px;
+    left: 260px;
+    font-family: "Allura", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 120px;
+    line-height: 150px;
+    color: #FFFFFF;
+    position: absolute;
+    text-align: center;
+    margin: 0;
+}
+
+/*Első rész:Legnépszerűbb ízek*/
+.first_h2 {
+    width: 362px;
+    height: 47px;
+    top: 528px;
+    left: 70px;
+    text-align: left;
+    color: #523923;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 46.88px; 
+    position: absolute;  
+}
+.box {
+    width: 300px;
+    height: 400px;
+    top: 650px;
+    border-radius: 8px 0px 0px 0px;
+    background-color: #F9F2ED;
+    box-shadow: 10px 10px 20px 0px #0000001A;
+    position: absolute;
+}
+.first {
+    left: 76px;
+}
+.second {
+    left: 406px
+}
+.third {
+    left: 736px
+}
+.fourth {
+    left: 1066px
+}
+
+/*Második rész:Visszajelzések*/
+.visszajelzesek_resz {
+    width: 1440px;
+    height: 1381px;
+    top: 1165px;
+    background-color: #82786F;
+    position: absolute;
+}
+.second_h2 {
+    width: 362px;
+    height: 47px;
+    top: 53px;
+    left: 70px;
+    font-size: 40px;
+    line-height: 46.88px;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+    position: relative;
+}
+.first_text {
+    width: 543px;
+    height: 417px;
+    top: 198px;
+    left: 70px;
+    text-align: justify;
+    position: absolute;
+}
+.second_text {
+    width: 538px;
+    height: 321px;
+    top: 802px;
+    left: 827px;
+    text-align: justify;
+    position: absolute;
+}
+.visszajelzesek_paragraph {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+.visszajelzesek_span {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #FFFFFF;
+    display: block;
+}
+.brown_box {
+    width: 543px;
+    height: 498px;
+    top: 132px;
+    left: 827px;
+    gap: 0px;
+    opacity: 0px;
+    background-color: #3A2719;
+    position: absolute;
+}
+.beige_box {
+    width: 543px;
+    height: 498px;
+    top: 735px;
+    left: 70px;
+    gap: 0px;
+    opacity: 0px;
+    background-color: #CEAF7B;
+    position: absolute;
+}
+
+/*Footer*/
+footer {
+    width: 1440px;
+    height: 285px;
+    top: 2546px;
+    gap: 0px;
+    opacity: 0px;
+    background-color: #25160B;
+    position: absolute;
+}
+.last_h2 {
+    width: 362px;
+    height: 47px;
+    top: 20px;
+    left: 70px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 46.88px;
+    text-align: left;
+    color: #FFFFFF;
+    position: absolute;
+}
+
