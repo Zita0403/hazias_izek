@@ -1,9 +1,11 @@
-html {
-    box-sizing: border-box;
-    display: block;
+* {
     border: 0;
     margin: 0;
     padding: 0;
+}
+html {
+    box-sizing: border-box;
+    display: block;
     width: 1440px;
     height: 2831px;
     background-color: #E4D7CC;
