@@ -3,9 +3,7 @@
     margin: 0;
     padding: 0;
 }
-body {
-    box-sizing: border-box;
-    display: block;
+body {      
     width: 1440px;
     height: 2831px;
     background-color: #E4D7CC;
@@ -13,14 +11,12 @@ body {
 
 /*Header*/
 .site_header {
-    /*box-sizing: inherit;*/
     width: 1440px;
     height: 430px;
     background-color: #A0774D;
     position: absolute;
 }
 h1 {
-    /*box-sizing: inherit;*/
     width: 921px;
     height: 150px;
     margin-top: 140px;
