@@ -93,7 +93,7 @@ h1 {
 .first_text {
     width: 543px;
     height: 417px;
-    margin-top: 198px;
+    margin-top: 198px; /*visszajelzések rész margin-top 1165px - felső szövegdoboz margin-top 1363px*/
     margin-left: 70px;
     text-align: justify;
     position: absolute;
@@ -101,7 +101,7 @@ h1 {
 .second_text {
     width: 538px;
     height: 321px;
-    margin-top: 802px;
+    margin-top: 802px; /*visszajelzések rész margin-top 1165px - alsó szövegdoboz margin-top 1967px*/
     margin-left: 827px;
     text-align: justify;
     position: absolute;
@@ -126,7 +126,7 @@ h1 {
 .brown_box {
     width: 543px;
     height: 498px;
-    margin-top: 132px;
+    margin-top: 132px; /*visszajelzések rész margin-top 1165px - barna div margin-top 1297px*/
     margin-left: 827px;
     background-color: #3A2719;
     position: absolute;
@@ -134,7 +134,7 @@ h1 {
 .beige_box {
     width: 543px;
     height: 498px;
-    margin-top: 735px;
+    margin-top: 735px; /*visszajelzések rész margin-top 1165px - bézs div margin-top 1900px*/
     margin-left: 70px;
     background-color: #CEAF7B;
     position: absolute;
