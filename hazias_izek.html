@@ -11,17 +11,24 @@
 </head>
 <body>
     <!--Header-->
-    <header class="site_header">
+    <header class="site_header" id="main">
         <div class="header_bgc">
             <h1>Házias ízek</h1>
         </div>
     </header>
     <!--Navigáció-->
-    <nav>Menüsor</nav>
+    <nav>
+        <ul>
+            <li><a href="#main">Főoldal</a></li>
+            <li><a href="#flavors">Legnépszerűbb ízek</a></li>
+            <li> <a href="#feedback">Visszajelzések</a></li>
+            <li><a href="#contact">Kapcsolat</a></li>
+        </ul>
+    </nav>
     <!--Main-->
     <main>
         <!--Első rész:Legnépszerűbb ízek-->
-        <section class="section2">
+        <section class="section2" id="flavors">
             <h2 class="first_h2">Legnépszerűbb ízek</h2>
             <!--Négy kártya-->
             <div class="first box"></div>
@@ -30,7 +37,7 @@
             <div class="fourth box"></div>
         </section>
         <!--Második rész:Visszajelzések-->
-        <section class="visszajelzesek_resz">
+        <section class="visszajelzesek_resz" id="feedback">
             <h2 class="second_h2">Visszajelzések</h2>
             <!--Második csoport négy div-->
             <div class="first_text">
@@ -46,7 +53,7 @@
         </section>
     </main>
     <!--Footer-->
-    <footer>
+    <footer id="contact">
         <h2 class="last_h2">Footer</h2>
     </footer>
 </body>

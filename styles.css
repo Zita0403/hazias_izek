@@ -47,17 +47,38 @@ h1 {
 
 /*Navigáció*/
 nav {
-    height: 40px;
+    height: 60px;
     width: 100%;
     font-family: "Allura", cursive;
     font-weight: 400;
     font-style: normal;
     font-size: 40px;
+    padding-top: 10px;
     background-color: rgba(111, 67, 9, 0.7);
-    color: #F9F2ED;
     position: sticky;
     top: 0px;
     z-index: 1;
+}
+
+a {
+    text-decoration: none;
+    color: #F9F2ED;
+}
+
+a:hover {
+    color:#25160b;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    padding: 60px;
 }
 
 /*Első rész:Legnépszerűbb ízek*/
