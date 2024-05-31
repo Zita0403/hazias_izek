@@ -47,20 +47,18 @@ h1 {
 
 /*Navigáció*/
 nav {
-    height: 60px;
-    width: 100%;
+    background-color: rgba(111, 67, 9, 0.7);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+nav a {
     font-family: "Allura", cursive;
     font-weight: 400;
     font-style: normal;
     font-size: 40px;
-    padding-top: 10px;
-    background-color: rgba(111, 67, 9, 0.7);
-    position: sticky;
-    top: 0px;
-    z-index: 1;
-}
-
-a {
     text-decoration: none;
     color: #F9F2ED;
 }
@@ -76,9 +74,31 @@ ul {
     text-align: center;
 }
 
-li {
-    display: inline;
-    padding: 60px;
+.main-menu li {
+    position: relative;
+    display: inline-block;
+}
+
+.main-menu li a {
+    display: block;
+    padding: 20px;
+}
+
+.sub-menu {
+    position: absolute;
+    top: 91px;
+    left: 0;
+    background-color: rgba(111, 67, 9, 0.7);
+    display: none;
+}
+
+.sub-menu li {
+    position: relative;
+    display: block;
+}
+
+.main-menu li:hover .sub-menu {
+    display: block;
 }
 
 /*Első rész:Legnépszerűbb ízek*/
@@ -134,7 +154,7 @@ main {
 }
 
 /*Második rész:Visszajelzések*/
-.visszajelzesek_resz {
+.feedback_section {
     width: 1440px;
     height: 1381px;
     top: 305px; /*735px az előző rész magassága - 430px ami a header magassága*/
@@ -175,7 +195,7 @@ main {
     position: absolute;
 }
 
-.visszajelzesek_paragraph {
+.feedback_paragraph {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-size: 20px;
@@ -184,7 +204,7 @@ main {
     color: #FFFFFF;
 }
 
-.visszajelzesek_span {
+.feedback_span {
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-size: 16px;
