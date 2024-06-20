@@ -1,5 +1,4 @@
 body {      
-    width: 1440px;
     height: 2831px;
     background-color: #E4D7CC;
     margin: 0;
@@ -8,10 +7,9 @@ body {
 
 /*Header*/
 .site_header {
-    width: 1440px;
     height: 430px;
     background-color: #A0774D;
-    background-image: url(./assets/images/bg.jpg);
+    background-image: url(./assets/images/pexels-quark-studio-1159039-3201921.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,19 +18,19 @@ body {
 }
 
 .header_bgc {
-    width: 1420px;
-    height: 150px;
-    position: absolute;
-    top: 140px;
-    left: 10px;
-    background-color: #8443024D;
+    width: 100%;
+    height: 100%;  
+    position: relative;
+    top: 0;
+    left: 0;
+    background-color: #c4772978;
 }
 
 h1 {
     width: 921px;
     height: 150px;
-    position: relative;
-    top: 0px;
+    position: absolute;
+    top: 100px;
     left: 260px;
     margin: 0;
     font-family: "Allura", cursive;
@@ -47,7 +45,6 @@ h1 {
 
 /*Navigáció*/
 nav {
-    width: 100%;
     height: 70px;
     background-color: rgba(111, 67, 9, 0.7);
     position: sticky;
@@ -91,9 +88,7 @@ ul {
     text-align: center;
 }
 
-/*Navigáció*/
 nav {
-    width: 100%;
     height: 70px;
     background-color: rgba(111, 67, 9, 0.7);
     position: sticky;
@@ -187,21 +182,65 @@ ul {
     transition-delay: 0.5s; 
 } 
 
+.sub-sub-menu {
+    position: absolute;
+    top: 0;
+    left: 300px;
+    background-color: rgba(111, 67, 9, 0.7);
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.sub-sub-menu li {
+    position: relative;
+    display: block;
+}
+
+.sub-menu li:hover .sub-sub-menu {
+    width: 300px;
+    height: auto;
+    text-align: center;
+    border: 0px solid rgba(111, 67, 9, 0.7);
+    border-radius: 0px 14px 14px 0px;
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+
+.sub-sub-menu li:first-child a:hover {
+    background-color: rgba(241, 181, 102, 0.3);
+    border: 0px solid rgba(241, 181, 102, 0.3);
+    border-radius: 0px 14px 0px 0px;
+}
+
+.sub-sub-menu li:last-child a:hover {
+    background-color: rgba(241, 181, 102, 0.3);
+    border: 0px solid rgba(241, 181, 102, 0.3);
+    border-radius: 0px 0px 14px 0px;
+}
+
 /*Első rész:Legnépszerűbb ízek*/
 main {
     padding-top: 0;
 }
 
 .section2 {
-    height: 735px;
+    height: 800px;
     position: relative;
-    top: 0px;
+    top: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 48px;
 }
 
 .first_h2 {
     width: 362px;
     height: 47px;
-    top: 207px; /*735px ami az első rész magassága - 528px ami a h2 távolsága az oldal tetejéről*/
+    top: -180px; 
     left: 70px;
     text-align: left;
     color: #523923;
@@ -216,32 +255,82 @@ main {
 .box {
     width: 300px;
     height: 400px;
-    top: 443px; /*650px ami az összes doboz távolsága az oldal tetejétől - a dobozok feletti h2 magassága az oldal tetejétől*/
     border-radius: 8px;
     background-color: #F9F2ED;
     box-shadow: 10px 10px 20px 0px #0000001A;
-    position: absolute;
+    flex: 0 0 300px;
 }
 
 .first {
-    left: 76px;
+    background-image: url(./assets/images/soup.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .second {
-    left: 406px
+    background-image: url(./assets/images/maincourse.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .third {
-    left: 736px
+    background-image: url(./assets/images/garnishes.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .fourth {
-    left: 1066px
+    background-image: url(./assets/images/salads.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fifth {
+    background-image: url(./assets/images/pic.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sixth {
+    background-image: url(./assets/images/souces.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.seventh {
+    background-image: url(./assets/images/desserts.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.eighth {
+    background-image: url(./assets/images/bowls.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section2 div h3 {
+    font-size: 30px;
+    line-height: 46.88px;
+    text-align: left;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: #9c7d6279;;
 }
 
 /*Második rész:Visszajelzések*/
 .feedback_section {
-    width: 1440px;
     height: 1381px;
     top: 305px; /*735px az előző rész magassága - 430px ami a header magassága*/
     background-color: #82786F;
@@ -328,7 +417,6 @@ main {
 
 /*Footer*/
 footer {
-    width: 1440px;
     height: 285px;
     top: 305px; /*második rész távolsága az oldal tetejétől*/
     background-color: #25160b;
