@@ -1,37 +1,38 @@
 body {      
-    height: 2831px;
     background-color: #E4D7CC;
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-areas: 
+        "header-area"
+        "nav-area"
+        "main-area"
+        "footer-area";
+    grid-template-rows: 50% 70px 1fr 30%;
+    height: 100vh;
 }
 
 /*Header*/
 .site_header {
-    height: 430px;
+    grid-area: header-area;
     background-color: #A0774D;
     background-image: url(./assets/images/pexels-quark-studio-1159039-3201921.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    top: 0;
 }
 
 .header_bgc {
     width: 100%;
     height: 100%;  
-    position: relative;
-    top: 0;
-    left: 0;
     background-color: #c4772978;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 h1 {
-    width: 921px;
-    height: 150px;
-    position: absolute;
-    top: 100px;
-    left: 260px;
+    padding: 0;
     margin: 0;
     font-family: "Allura", cursive;
     font-weight: 400;
@@ -39,15 +40,14 @@ h1 {
     font-size: 120px;
     line-height: 150px;
     color: #FFFFFF;
-    position: relative;
     text-align: center;
 }
 
 /*Navigáció*/
 nav {
-    height: 70px;
+    grid-area: nav-area;
     background-color: rgba(111, 67, 9, 0.7);
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
@@ -72,12 +72,10 @@ nav a {
 a:hover {
     color:#25160b;
     background-color: rgba(241, 181, 102, 0.3);
-    border: 0px solid rgba(241, 181, 102, 0.3);
 }
 
 .sub-menu li:last-child a:hover {
     background-color: rgba(241, 181, 102, 0.3);
-    border: 0px solid rgba(241, 181, 102, 0.3);
     border-radius: 0px 0px 14px 14px;
 }
 
@@ -100,28 +98,13 @@ nav {
     align-items: center;
 }
 
-nav a {
-    font-family: "Allura", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 40px;
-    text-decoration: none;
-    color: #F9F2ED;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%; 
-}
-
 a:hover {
     color:#25160b;
     background-color: rgba(241, 181, 102, 0.3);
-    border: 0px solid rgba(241, 181, 102, 0.3);
 }
 
 .sub-menu li:last-child a:hover {
     background-color: rgba(241, 181, 102, 0.3);
-    border: 0px solid rgba(241, 181, 102, 0.3);
     border-radius: 0px 0px 14px 14px;
 }
 
@@ -211,45 +194,50 @@ ul {
 
 .sub-sub-menu li:first-child a:hover {
     background-color: rgba(241, 181, 102, 0.3);
-    border: 0px solid rgba(241, 181, 102, 0.3);
     border-radius: 0px 14px 0px 0px;
 }
 
 .sub-sub-menu li:last-child a:hover {
     background-color: rgba(241, 181, 102, 0.3);
-    border: 0px solid rgba(241, 181, 102, 0.3);
     border-radius: 0px 0px 14px 0px;
 }
 
 /*Első rész:Legnépszerűbb ízek*/
 main {
-    padding-top: 0;
+    padding: 0;
+    margin: 0;
+    grid-area: main-area;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .section2 {
-    height: 800px;
-    position: relative;
-    top: 200px;
+    flex: 1;
+    grid-area: flavors-area;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     flex-wrap: wrap;
-    gap: 48px;
 }
 
 .first_h2 {
-    width: 362px;
-    height: 47px;
-    top: -180px; 
-    left: 70px;
-    text-align: left;
     color: #523923;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 40px;
     line-height: 46.88px; 
-    position: absolute;  
+    margin-left: 10%;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .box {
@@ -258,7 +246,6 @@ main {
     border-radius: 8px;
     background-color: #F9F2ED;
     box-shadow: 10px 10px 20px 0px #0000001A;
-    flex: 0 0 300px;
 }
 
 .first {
@@ -331,17 +318,20 @@ main {
 
 /*Második rész:Visszajelzések*/
 .feedback_section {
-    height: 1381px;
-    top: 305px; /*735px az előző rész magassága - 430px ami a header magassága*/
+    flex: 1;
     background-color: #82786F;
-    position: relative;
+    padding-bottom: 50px;
+}
+
+.flex-container2 {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px; 
 }
 
 .second_h2 {
-    width: 362px;
-    height: 47px;
-    top: 53px;
-    left: 70px;
     font-size: 40px;
     line-height: 46.88px;
     text-align: left;
@@ -349,25 +339,17 @@ main {
     font-weight: 400;
     font-style: normal;
     color: #FFFFFF;
-    position: relative;
+    margin-left: 10%;
 }
 
-.first_text {
-    width: 543px;
-    height: 417px;
-    top: 198px; /*visszajelzések rész margin-top 1165px - felső szövegdoboz margin-top 1363px*/
-    left: 70px;
-    text-align: justify;
-    position: absolute;
-}
-
-.second_text {
+.feedback-text {
     width: 538px;
     height: 321px;
-    top: 802px; /*visszajelzések rész margin-top 1165px - alsó szövegdoboz margin-top 1967px*/
-    left: 827px;
-    text-align: justify;
-    position: absolute;
+    text-align: justify; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
 }
 
 .feedback_paragraph {
@@ -386,48 +368,36 @@ main {
     font-weight: 400;
     line-height: 32px;
     color: #FFFFFF;
-    display: block;
 }
 
 .brown_box {
     width: 543px;
     height: 498px;
-    top: 132px; /*visszajelzések rész margin-top 1165px - barna div margin-top 1297px*/
-    left: 827px;
     background-color: #3A2719;
     background-image: url(./assets/images/pumpkin-cream-soup-bowl.jpg);
     background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
-    position: absolute;
 }
 
 .beige_box {
     width: 543px;
     height: 498px;
-    top: 735px; /*visszajelzések rész margin-top 1165px - bézs div margin-top 1900px*/
-    left: 70px;
     background-color: #CEAF7B;
     background-image: url(./assets/images/meatballs-with-vegetables-tomato-sauce.jpg);
     background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
-    position: absolute;
+
 }
 
 /*Footer*/
 footer {
-    height: 285px;
-    top: 305px; /*második rész távolsága az oldal tetejétől*/
+    grid-area: footer-area;
     background-color: #25160b;
-    position: relative;
 }
 
 .last_h2 {
-    width: 362px;
-    height: 47px;
-    top: 46px;
-    left: 70px;
     font-family: "Roboto", sans-serif;
     font-style: normal;
     font-size: 40px;
@@ -435,6 +405,6 @@ footer {
     line-height: 46.88px;
     text-align: left;
     color: #FFFFFF;
-    position: absolute;
+    margin-left: 10%;
 }
 
