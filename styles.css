@@ -3,13 +3,13 @@ body {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-areas: 
-        "header-area"
-        "nav-area"
-        "main-area"
-        "footer-area";
-    grid-template-rows: 50% 70px 1fr 30%;
-    height: 100vh;
+    grid: 
+        "header-area" 15%
+        "nav-area" 70px
+        "main-area" 1fr
+        "footer-area" 10%
+        / 1fr
+    ;
 }
 
 /*Header*/
@@ -20,6 +20,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative; 
+    z-index: 1; 
 }
 
 .header_bgc {
@@ -44,13 +46,12 @@ h1 {
 }
 
 /*Navigáció*/
-nav {
+body nav {
     grid-area: nav-area;
     background-color: rgba(111, 67, 9, 0.7);
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
-    z-index: 1;
+    z-index: 2;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -84,18 +85,6 @@ ul {
     margin: 0;
     padding: 0;
     text-align: center;
-}
-
-nav {
-    height: 70px;
-    background-color: rgba(111, 67, 9, 0.7);
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 
 a:hover {
@@ -213,13 +202,13 @@ main {
 }
 
 .section2 {
+    margin: 0;
     flex: 1;
     grid-area: flavors-area;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .first_h2 {
@@ -230,14 +219,14 @@ main {
     font-size: 40px;
     line-height: 46.88px; 
     margin-left: 10%;
+    padding-bottom: 50px;
 }
 
-.flex-container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 30px;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
 }
 
 .box {
@@ -246,6 +235,7 @@ main {
     border-radius: 8px;
     background-color: #F9F2ED;
     box-shadow: 10px 10px 20px 0px #0000001A;
+    justify-self: center;
 }
 
 .first {
@@ -320,15 +310,15 @@ main {
 .feedback_section {
     flex: 1;
     background-color: #82786F;
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 
-.flex-container2 {
-    display: flex;
-    justify-content: space-around; 
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 30px; 
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
 }
 
 .second_h2 {
@@ -340,16 +330,15 @@ main {
     font-style: normal;
     color: #FFFFFF;
     margin-left: 10%;
+    padding-bottom: 50px;
 }
 
 .feedback-text {
     width: 538px;
     height: 321px;
-    text-align: justify; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
+    justify-self: center;
+    text-align: justify;
+    align-self: center;
 }
 
 .feedback_paragraph {
@@ -374,21 +363,24 @@ main {
     width: 543px;
     height: 498px;
     background-color: #3A2719;
-    background-image: url(./assets/images/pumpkin-cream-soup-bowl.jpg);
+    background-image: url(./assets/images/board-3700116_640.jpg);
     background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
+    justify-self: center;
+    align-self: center;
 }
 
 .beige_box {
     width: 543px;
     height: 498px;
     background-color: #CEAF7B;
-    background-image: url(./assets/images/meatballs-with-vegetables-tomato-sauce.jpg);
+    background-image: url(./assets/images/balloon-1014411_640.jpg);
     background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
-
+    justify-self: center;
+    align-self: center;
 }
 
 /*Footer*/
@@ -406,5 +398,90 @@ footer {
     text-align: left;
     color: #FFFFFF;
     margin-left: 10%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+@media (max-width: 1199.98px) {
+
+    body {
+        grid: 
+        "header-area" 12%
+        "nav-area" 70px
+        "main-area" 1fr
+        "footer-area" 8%
+        / 1fr
+    ;
+    }
+    h1 {
+        font-size: 80px;
+    }
+    .first_h2, .second_h2, .last_h2 {
+        font-size: 30px;
+    }
+    .box {
+        width: 250px;
+        height: 350px;
+    }
+    .section2 div h3 {
+        font-size: 20px;
+    }
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;   
+    }
+
+    .grid-container2 {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 10px;
+    }
+    .feedback-text {
+        width: 403px;
+        height: 358px;
+    }
+    
+    .feedback_paragraph {
+        font-size: 13px;
+        line-height: 26px;
+    }
+    
+    .feedback_span {
+        font-size: 10px;
+        line-height: 26px;
+    }
+    
+    .brown_box, .beige_box {
+        width: 403px;
+        height: 358px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    h1 {
+        font-size: 60px;
+        line-height: 1.2;
+    }
+    .first_h2, .second_h2 {
+        font-size: 24px;
+    }
+    .grid-container, .grid-container2 {
+        grid-template-columns: 1fr;
+    }
+    .box, .feedback-text {
+        width: 50%;
+        height: auto;
+    }
+    .main-menu {
+        flex-direction: column;
+    }
+    .main-menu li {
+        width: 100%;
+    }
+    .sub-menu, .sub-sub-menu {
+        left: 0;
+        top: auto;
+        position: relative;
+    }
 }
 
