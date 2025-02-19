@@ -76,7 +76,11 @@ a {
     padding: 0;
 }
 
-a:hover {
+.arrow {
+    padding-left: 5px;
+}
+
+li:hover {
     color:#25160b;
     background-color: rgba(241, 181, 102, 0.3);
 }
@@ -193,6 +197,10 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.dropdown_menu li:hover {
+    background-color: rgba(241, 181, 102, 0.3);
 }
 
 .dropdown_menu li a {
