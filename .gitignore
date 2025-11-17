@@ -1,0 +1,22 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node / build systems (ha nincs, maradhat)
+node_modules/
+dist/
+build/
+
+# Editor beállítások
+.vscode/
+.idea/
+
+# Logok
+*.log
+
+# SASS cache (ha lenne)
+.sass-cache/
+
+# Temporary files
+*.tmp
+*.cache

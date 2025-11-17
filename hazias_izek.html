@@ -20,17 +20,18 @@
     </header>
     <!--Navigáció-->
     <nav>
+        <!--Normál menü-->
         <ul class="main-menu">
-            <li><a href="#main-page" class="active">Főoldal</a></li>
+            <li><a href="#" class="active">Főoldal</a></li>
             <li>
-                <a href="" class="toggle-sub-menu">Legnépszerűbb ízek
-                    <i class="fa-solid fa-chevron-down" class="arrow"></i>
+                <a href="#" class="toggle-sub-menu">Legnépszerűbb ízek
+                    <i class="fa-solid fa-chevron-down arrow"></i>
                 </a>
                 <ul class="sub-menu">
                     <li><a href="#">Levesek</a></li>
                     <li>
                         <a href="#"class="toggle-sub-sub-menu">Főételek
-                            <i class="fa-solid fa-angle-right" class="arrow"></i>
+                            <i class="fa-solid fa-angle-right arrow"></i>
                         </a>
                         <ul class="sub-sub-menu">
                             <li><a href="#">Tésztaételek</a></li>
@@ -51,19 +52,22 @@
             <li><a href="#feedback">Visszajelzések</a></li>
             <li><a href="#contact">Kapcsolat</a></li>
         </ul>
-        <div class="toggle_btn">
+        <div class="toggle-btn">
             <i class="fa-solid fa-bars"></i>
         </div>
-        <ul class="dropdown_menu">
-            <li><a href="#main-page">Főoldal</a></li>
-            <li><a href="#flavors">Legnépszerűbb ízek</a>
-                <ul class="sub-menu">
+        <!--Mobil menü-->
+        <ul class="dropdown-menu">
+            <li><a href="#">Főoldal</a></li>
+            <li><a href="#">Legnépszerűbb ízek
+                    <i class="fa-solid fa-chevron-down arrow"></i>
+            </a>
+                <ul class="dropdown-sub-menu">
                     <li><a href="#">Levesek</a></li>
                     <li>
-                        <a href="#"class="toggle-sub-sub-menu">Főételek
-                            <i class="fa-solid fa-angle-right"></i>
+                        <a href="#">Főételek
+                            <i class="fa-solid fa-chevron-down arrow"></i>
                         </a>
-                        <ul class="sub-sub-menu">
+                        <ul class="dropdown-sub-sub-menu">
                             <li><a href="#">Tésztaételek</a></li>
                             <li><a href="#">Halételek</a></li>
                             <li><a href="#">Marhahúsos ételek</a></li>
@@ -90,28 +94,28 @@
             <h2 class="first_h2">Legnépszerűbb ízek</h2>
             <!--Négy kártya-->
             <div class="grid-container">
-                <div class="first box">
+                <div id="first" class="box bg-position">
                     <h3>Levesek</h3>
                 </div>
-                <div class="second box">
+                <div id="second" class="box bg-position">
                     <h3>Főételek</h3>
                 </div>
-                <div class="third box">
+                <div id="third" class="box bg-position">
                     <h3>Köretek</h3>
                 </div>
-                <div class="fourth box">
+                <div id="fourth" class="box bg-position">
                     <h3>Saláták</h3>
                 </div>
-                <div class="fifth box">
+                <div id="fifth" class="box bg-position"">
                     <h3>Savanyúságok</h3>
                 </div>
-                <div class="sixth box">
+                <div id="sixth" class="box bg-position">
                     <h3>Mártások, szószok</h3>
                 </div>
-                <div class="seventh box">
+                <div id="seventh" class="box bg-position">
                     <h3>Desszertek</h3>
                 </div>
-                <div class="eighth box">
+                <div id="eight" class="box bg-position">
                     <h3>Tálak</h3>
                 </div>
             </div>
@@ -122,13 +126,13 @@
             <h2 class="second_h2">Visszajelzések</h2>
             <!--Második csoport négy div-->
             <div class="grid-container2">
-                <div class="first_text feedback-text">
+                <div class="feedback-text">
                     <p class="feedback_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptatem expedita esse voluptatum sint cupiditate libero natus quas dolorem fugit quidem, dolor quo officia culpa officiis illum eos cumque dignissimos? Eum eaque ut voluptas quia, dicta numquam tempore! Cupiditate dignissimos inventore tempora error rerum. Architecto provident odit ab pariatur, sequi qui laboriosam facere veniam deserunt nisi fugit id distinctio quod.</p>
                     <span class="feedback_span">Natus, excepturi laboriosam. Natusquerum atque voluptatum quaerat. Assumenda repellendus enim impedit quasi nisi officia corporis! A ipsam voluptate nam consectetur reprehenderit commodi quam rem facilis, consequuntur nemo sit? Dolores velit accusantium adipisci veritatis unde, excepturi ex labore?</span>
                 </div>
-                <div class="brown_box"></div>
-                <div class="beige_box"></div>
-                <div class="first_text feedback-text">
+                <div class="feedback_box brown_box bg-position"></div>
+                <div class="feedback_box beige_box bg-position"></div>
+                <div class="feedback-text">
                     <p class="feedback_paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptatem expedita esse voluptatum sint cupiditate libero natus quas dolorem fugit quidem, dolor quo officia culpa officiis illum eos cumque dignissimos? Eum eaque ut voluptas quia, dicta numquam tempore! Cupiditate dignissimos inventore tempora error rerum. Architecto provident odit ab pariatur, sequi qui laboriosam facere veniam deserunt nisi fugit id distinctio quod.</p>
                     <span class="feedback_span">Natus, excepturi laboriosam. Natusquerum atque voluptatum quaerat. Assumenda repellendus enim impedit quasi nisi officia corporis! A ipsam</span>
                 </div>
