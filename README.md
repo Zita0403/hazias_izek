@@ -21,6 +21,7 @@ A Házias ízek egy egyszerű, reszponzív weboldal, amely:
 
 ## Fájlszerkezet
 
+```text
 hazias_izek/
 │── assets/
 │   └── images/            # Képek 
@@ -41,6 +42,9 @@ hazias_izek/
 - Visszajelzések szekció grid elrendezésben
 
 ## Megjelenítés
+
+A projekt élőben is megtekinthető az alábbi linken:  
+**[haziasizek.zita.dev](https://haziasizek.zita.dev)**
 
 1. Töltsd le a projektet vagy klónozd a GitHub repót: git clone https://github.com/felhasznalonev/hazias_izek.git
 

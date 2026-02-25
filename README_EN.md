@@ -22,6 +22,7 @@ Homemade Flavors is a simple yet fully responsive website that:
 
 ## File Structure
 
+```text
 hazias_izek/
 │── assets/
 │   └── images/            # Images
@@ -43,6 +44,9 @@ hazias_izek/
 - Feedback section using grid layout
 
 ## How to Run
+
+You can view the project live at the following link:  
+**[haziasizek.zita.dev](https://haziasizek.zita.dev)**
 
 1. Download or clone the repository: git clone https://github.com/username/hazias_izek.git
 
