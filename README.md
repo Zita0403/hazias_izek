@@ -31,6 +31,7 @@ hazias_izek/
 │── README.md              # Dokumentáció
 │── scripts.js             # jQuery alapú interakciók
 │── styles.css             # Stíluslap (grid + media query)
+```
 
 ## Fő funkciók
 

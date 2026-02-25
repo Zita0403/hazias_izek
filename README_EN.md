@@ -33,6 +33,7 @@ hazias_izek/
 │── README_EN.md           # Documentation (English version)
 │── scripts.js             # jQuery-based interactions
 │── styles.css             # Main stylesheet (grid + media queries)
+```
 
 ## Main Features
 
