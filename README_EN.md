@@ -6,7 +6,7 @@
 
 **Language:** [HU Magyar](README.md) | GB English
 
-![Homepage screenshot](assets/images/hazias_izek.png)
+![Homepage screenshot](public/assets/images/hazias_izek.png)
 
 This project was created as a **homework assignment** during the first module of the Fullstack Web Developer course (HTML + CSS + basic JavaScript/jQuery).
 It represents the implementation of a fictional gastronomic website demonstrating responsive layout techniques and dynamic navigation.

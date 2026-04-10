@@ -6,7 +6,7 @@
 
 **Nyelv:** HU Magyar | [GB English](README_EN.md)
 
-![Kezdőlap képernyőképe](assets/images/hazias_izek.png)
+![Kezdőlap képernyőképe](/public/assets/images/hazias_izek.png)
 
 Ez a projekt a **Fullstack Webfejlesztő képzés** első moduljában (HTML + CSS + alap JavaScript/jQuery) készült **házi feladatként**, amely egy **fiktív gasztronómiai weboldal** megvalósítását mutatja be.
 
