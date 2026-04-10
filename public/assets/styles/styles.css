@@ -406,12 +406,12 @@ main {
 
 .brown_box {
     background-color: #3A2719;
-    background-image: url(./assets/images/board-3700116_640.jpg);
+    background-image: url(/public/assets/images/board-3700116_640.jpg);
 }
 
 .beige_box {
     background-color: #CEAF7B;
-    background-image: url(./assets/images/balloon-1014411_640.jpg);
+    background-image: url(/public/assets/images/balloon-1014411_640.jpg);
 }
 
 /*Footer*/
