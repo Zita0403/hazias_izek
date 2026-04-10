@@ -20,7 +20,7 @@ body {
 .site_header {
     grid-area: header-area;
     background-color: #A0774D;
-    background-image: url(./assets/images/pexels-quark-studio-1159039-3201921.jpg);
+    background-image: url(/public/assets/images/pexels-quark-studio-1159039-3201921.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -299,35 +299,35 @@ main {
 }
 
 #first {
-    background-image: url(./assets/images/soup.jpg);
+    background-image: url(/public/assets/images/soup.jpg);
 }
 
 #second {
-    background-image: url(./assets/images/maincourse.jpg);
+    background-image: url(/public/assets/images/maincourse.jpg);
 }
 
 #third {
-    background-image: url(./assets/images/garnishes.jpg);
+    background-image: url(/public/assets/images/garnishes.jpg);
 }
 
 #fourth {
-    background-image: url(./assets/images/salads.jpg);
+    background-image: url(/public/assets/images/salads.jpg);
 }
 
 #fifth {
-    background-image: url(./assets/images/pic.jpg);
+    background-image: url(/public/assets/images/pic.jpg);
 }
 
 #sixth {
-    background-image: url(./assets/images/souces.jpg);
+    background-image: url(/public/assets/images/souces.jpg);
 }
 
 #seventh {
-    background-image: url(./assets/images/desserts.jpg);
+    background-image: url(/public/assets/images/desserts.jpg);
 }
 
 #eight {
-    background-image: url(./assets/images/bowls.jpg);
+    background-image: url(/public/assets/images/bowls.jpg);
 }
 
 .section2 .box h3 {

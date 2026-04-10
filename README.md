@@ -22,15 +22,19 @@ A Házias ízek egy egyszerű, reszponzív weboldal, amely:
 ## Fájlszerkezet
 
 ```text
-hazias_izek/
-│── assets/
-│   └── images/            # Képek 
-│
-│── hazias_izek.html       # Fő HTML oldal
-│── jQuery.js              # Letöltött jQuery könyvtár
-│── README.md              # Dokumentáció
-│── scripts.js             # jQuery alapú interakciók
-│── styles.css             # Stíluslap (grid + media query)
+hazias_izek/ 
+├── public/ 
+│   └── assets/
+│        ├── images/            # Képek
+│        ├── js/
+│        │   ├── jQuery.js      # Letöltött jQuery könyvtár
+│        │   └── scripts.js     # jQuery alapú interakciók
+│        └── styles/
+│            └── styles.css     # Stíluslap (grid + media query)
+├── hazias_izek.html            # Fő HTML oldal
+├── README.md                   # Dokumentáció (Magyar nyelvű)
+├── README_EN.md                # Dokumentáció (Angol nyelvű)
+└── .gitignore
 ```
 
 ## Fő funkciók

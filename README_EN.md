@@ -23,16 +23,19 @@ Homemade Flavors is a simple yet fully responsive website that:
 ## File Structure
 
 ```text
-hazias_izek/
-│── assets/
-│   └── images/            # Images
-│
-│── hazias_izek.html       # Main HTML page
-│── jQuery.js              # Local jQuery library
-│── README.md              # Documentation (Hungarian version)
-│── README_EN.md           # Documentation (English version)
-│── scripts.js             # jQuery-based interactions
-│── styles.css             # Main stylesheet (grid + media queries)
+hazias_izek/ 
+├── public/ 
+│   └── assets/
+│        ├── images/            # Images
+│        ├── js/
+│        │   ├── jQuery.js      # Local jQuery library
+│        │   └── scripts.js     # jQuery-based interactions
+│        └── styles/
+│            └── styles.css     # Main stylesheet (grid + media queries)
+├── hazias_izek.html            # Main HTML page
+├── README.md                   # Documentation (Hungarian version)
+├── README_EN.md                # Documentation (English version)
+└── .gitignore
 ```
 
 ## Main Features
