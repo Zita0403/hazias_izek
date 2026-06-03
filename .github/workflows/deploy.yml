@@ -26,6 +26,7 @@ jobs:
     - name: Deploy to Server via Rsync
       run: |
         rsync -atv --delete \
+          -e "ssh -o StrictHostKeyChecking=no" \
           --exclude='.git*' \
           --exclude='.github*' \
           ./ ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:${{ secrets.SERVER_TARGET }}
