@@ -1,0 +1,31 @@
+name: Deploy Házias Ízek Static Website
+
+on:
+  push:
+    branches:
+      - main 
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+
+    - name: Install SSH Key
+      uses: shimataro/ssh-key-action@v2
+      with:
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        known_hosts: 'unnecessary'
+        if_key_exists: replace
+
+
+    - name: Deploy to Server via Rsync
+      run: |
+        rsync -atv --delete \
+          --exclude='.git*' \
+          --exclude='.github*' \
+          ./ ${{ secrets.SERVER_USER }}@${{ secrets.SERVER_IP }}:${{ secrets.SERVER_TARGET }}
