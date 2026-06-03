@@ -234,10 +234,11 @@ a {
 }
 
 .fa-chevron-down, .fa-angle-right {
+    filter: invert(96%) sepia(5%) saturate(762%) hue-rotate(336deg) brightness(102%) contrast(96%);
     padding-left: 5px;
     display: inline-block;
-    width: 14px;
-    height: 14px;
+    width: 30px;
+    height: 30px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -265,8 +266,32 @@ li:hover {
     color: #fff;
     font-size: 1.5rem;
     cursor: pointer;
-    display: block;
     padding-left: 20px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.fa-bars {
+    background-image: url('/public/assets/webfonts/bars-solid-full.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    filter: invert(96%) sepia(5%) saturate(762%) hue-rotate(336deg) brightness(102%) contrast(96%);
+    width: 30px;
+    height: 30px;
+}
+
+.fa-xmark {
+    background-image: url('/public/assets/webfonts/xmark-solid-full.svg');
+    filter: invert(96%) sepia(5%) saturate(762%) hue-rotate(336deg) brightness(102%) contrast(96%);
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
 }
 
 /*Normál menü*/
@@ -347,6 +372,12 @@ li:hover {
 
 .sub-sub-menu li:last-child a:hover {
     border-radius: 0px 0px 14px 0px;
+}
+
+.main-menu a, .sub-menu a, .dropdown-menu a {
+    display: flex;        
+    align-items: center;    
+    justify-content: space-between; 
 }
 
 /*Mobil menü*/
