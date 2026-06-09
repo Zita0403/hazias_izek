@@ -272,8 +272,8 @@ li:hover {
     height: 100%;
 }
 
-.fa-bars {
-    background-image: url('/public/assets/webfonts/bars-solid-full.svg');
+.fa-bars, 
+.fa-xmark {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -283,15 +283,12 @@ li:hover {
     height: 30px;
 }
 
+.fa-bars {
+    background-image: url('/public/assets/webfonts/bars-solid-full.svg');
+}
+
 .fa-xmark {
     background-image: url('/public/assets/webfonts/xmark-solid-full.svg');
-    filter: invert(96%) sepia(5%) saturate(762%) hue-rotate(336deg) brightness(102%) contrast(96%);
-    width: 30px;
-    height: 30px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: inline-block;
 }
 
 /*Normál menü*/

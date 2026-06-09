@@ -7,7 +7,7 @@ $(document).ready(function() {
     $toggleBtn.on("click", function() {
         $dropDownMenu.toggleClass("open");
         let isOpen = $dropDownMenu.hasClass("open");
-        $toggleBtnIcon.attr("class", isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars");
+        $toggleBtnIcon.attr("class", isOpen ? "fa-xmark" : "fa-bars");
         if (isOpen) {
             // Menü megnyitásakor zárja be az összes almenüt
             $(".dropdown-sub-menu, .dropdown-sub-sub-menu").slideUp(0);
@@ -70,7 +70,7 @@ $(document).ready(function() {
         if ($(window).width() > 992) {
             $dropDownMenu.removeClass("open"); 
             $dropDownMenu.find(".dropdown-sub-menu, .dropdown-sub-sub-menu").slideUp(0);
-            $toggleBtnIcon.attr("class", "fa-solid fa-bars");
+            $toggleBtnIcon.attr("class", "fa-bars");
         }
     });
 });
