@@ -173,7 +173,7 @@ body {
 .site_header {
     grid-area: header-area;
     background-color: #A0774D;
-    background-image: url(/public/assets/images/pexels-quark-studio-1159039-3201921.jpg);
+    background-image: url(/public/assets/images/pexels-quark-studio-1159039-3201921.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -495,35 +495,35 @@ main {
 }
 
 #first {
-    background-image: url(/public/assets/images/soup.jpg);
+    background-image: url(/public/assets/images/soup.webp);
 }
 
 #second {
-    background-image: url(/public/assets/images/maincourse.jpg);
+    background-image: url(/public/assets/images/maincourse.webp);
 }
 
 #third {
-    background-image: url(/public/assets/images/garnishes.jpg);
+    background-image: url(/public/assets/images/garnishes.webp);
 }
 
 #fourth {
-    background-image: url(/public/assets/images/salads.jpg);
+    background-image: url(/public/assets/images/salads.webp);
 }
 
 #fifth {
-    background-image: url(/public/assets/images/pic.jpg);
+    background-image: url(/public/assets/images/pic.webp);
 }
 
 #sixth {
-    background-image: url(/public/assets/images/souces.jpg);
+    background-image: url(/public/assets/images/souces.webp);
 }
 
 #seventh {
-    background-image: url(/public/assets/images/desserts.jpg);
+    background-image: url(/public/assets/images/desserts.webp);
 }
 
 #eight {
-    background-image: url(/public/assets/images/bowls.jpg);
+    background-image: url(/public/assets/images/bowls.webp);
 }
 
 .section2 .box h3 {
