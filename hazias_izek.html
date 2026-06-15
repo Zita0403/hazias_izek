@@ -13,7 +13,7 @@
     <meta property="og:type" content="website">
     <link rel="icon" href="/public/assets/images/logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="/public/assets/styles/styles.css?v=2">
-    <script src="/public/assets/js/jQuery.js"></script>
+    <script src="/public/assets/js/jQuery.js" defer></script>
 </head>
 <body>
     <!--Header-->
@@ -56,9 +56,9 @@
             <li><a href="#feedback">Visszajelzések</a></li>
             <li><a href="#contact">Kapcsolat</a></li>
         </ul>
-        <div class="toggle-btn" aria-label="Menü megnyitása és bezárása">
+        <button class="toggle-btn" aria-label="Menü megnyitása és bezárása">
             <i class="fa-bars" aria-hidden="true"></i>
-        </div>
+        </button>
         <!--Mobil menü-->
         <ul class="dropdown-menu">
             <li><a href="#">Főoldal</a></li>
@@ -67,8 +67,8 @@
             </a>
                 <ul class="dropdown-sub-menu">
                     <li><a href="#">Levesek</a></li>
-                    <li aria-label="Főételek menüpont, további kategóriák lenyitása" aria-expanded="false" aria-haspopup="true">
-                        <a href="#">Főételek
+                    <li>
+                        <a href="#" aria-label="Főételek menüpont, további kategóriák lenyitása" aria-expanded="false" aria-haspopup="true">Főételek
                             <i class="fa-chevron-down" aria-hidden="true"></i>
                         </a>
                         <ul class="dropdown-sub-sub-menu">
